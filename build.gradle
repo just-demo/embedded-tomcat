@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'demo'
+version '1.0-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.tomcat.embed:tomcat-embed-core:9.0.45'
+    // This does not include javax.servlet.http.*
+    // implementation 'org.apache.tomcat.embed:tomcat-embed-core:10.0.5'
+}
